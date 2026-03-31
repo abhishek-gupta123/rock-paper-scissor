@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Papper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <p class="title">Rock Papper Scissors</p>
+
+    <button onclick="
+        computerMove =  pickComputerMove();
+        
+    " class="move-button js-rock-button"><img src="images/rock-emoji.png" alt="Rock image" class="move-icon"></button>
+
+    <button onclick="
+        const computermove = pickComputerMove();
+
+    " class="move-button js-paper-button"><img src="images/paper-emoji.png" alt="Papper image"
+            class="move-icon"></button>
+
+    <button onclick="
+        computerMove = pickComputerMove();
+      
+        
+    " class="move-button js-scissors-button"><img src="images/scissors-emoji.png" alt="Scissors image"
+            class="move-icon"></button>
+
+    <p class="js-result result"></p>
+    <p class="js-moves">
+    </p>
+    <p class="js-score score"></p>
+
+    <button class="reset-btn js-reset-button">Reset Score</button>
+
+    <button class="auto-play-button js-auto-play-button">Auto Play</button>
+
+    <div class="info-box js-info-box">Are you sure you want to reset the score? <button class="yes-button">Yes</button>
+        <button class="no-button">No</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
